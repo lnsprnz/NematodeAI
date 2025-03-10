@@ -25,7 +25,7 @@ andere Organismen
 - Unterscheidung zwischen Juvenil, dauer juvenil, adults
 
   Unterscheidungen zwischen Nematoden
-- morphologische merkmale --> hülle um den nematoden
+- morphologische merkmale --> hülle um den nematoden & größe
 - bewegungsmerkmale --> grasende merkmale
 
 Ziel: Analyse der Population Dynamics:
