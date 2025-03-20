@@ -31,13 +31,18 @@ Ziel: Analyse der Population Dynamics in der FuE von neuen Nematoden (3 Klassen:
     - Mask R-CNN
     - SAM (Meta)
 - Großer Aufwand wird die Annotation an der man wg. der Evaluation nicht herumkommt. Hier könnte Vorverabeitung oder SAM eine Unterstützung sein
-- Zwei Ansätze:
+- Drei Ansätze:
     - straightforward: 
         - Daten annotieren und YOLO bzw. Mask R-CNN trainieren ggf. Vorverarbeitung
-    - fancy: 
+    - Classifications: 
         - Verwendung von SAM um Daten annotation zu vereinfachen (Auto Segmentation via Koordinaten Prompt) 
         - Verwendung eine bereits trainierten Models oder SAM parameter finetunen um Bounding Boxen Nematoden (jeglicher Klasse zu erkennen)
         - Dann ein Klassifikationsmodell auf ROIs trainieren
+    - Keypoint Detection & Unsupervised clustering
+        - Keypoints Predicten (3 o. 5 Keypoints auf Körper der Nematoden)
+        - Features: Bewegung der Keypoints über x Frames, Abstand der Keypoints, etc.
+        - Ziel: Bewegungsmerkmale und Morphologische Merkmale der einzelnen Nematoden analysieren
+        - iterativ beginnen mit hohen verdünnungen
 
 # Training auf den HS Servern
 
